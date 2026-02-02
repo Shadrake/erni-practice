@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Task Board</title>
+  <style>
+    body {
+      font-family: sans-serif;
+    }
+
+    .board {
+      display: flex;
+      gap: 16px;
+    }
+
+    .column {
+      border: 1px solid #ccc;
+      padding: 8px;
+      width: 200px;
+    }
+
+    .column h2 {
+      text-align: center;
+    }
+
+    .task {
+      border: 1px solid #999;
+      padding: 4px;
+      margin-bottom: 6px;
+      background: #f9f9f9;
+    }
+  </style>
+</head>
+<body>
+  <h1>Mis tareas</h1>
+
+  <div class="board">
+    <div class="column" id="backlog">
+      <h2>Backlog</h2>
+    </div>
+
+    <div class="column" id="todo">
+      <h2>To Do</h2>
+    </div>
+
+    <div class="column" id="inprogress">
+      <h2>In Progress</h2>
+    </div>
+
+    <div class="column" id="done">
+      <h2>Done</h2>
+    </div>
+
+    <div class="column" id="closed">
+      <h2>Closed</h2>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
